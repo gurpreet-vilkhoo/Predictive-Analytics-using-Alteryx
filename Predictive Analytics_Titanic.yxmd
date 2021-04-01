@@ -1,0 +1,559 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\LC\Downloads\train.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>train.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PassengerId" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Survived" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Pclass" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Name" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Sex" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Age" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="SibSp" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Parch" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Ticket" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Fare" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Cabin" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Embarked" size="254" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\LC\AppData\Local\Temp\Engine_2676_d94e877f167b490098f37ead72a5f424_\Engine_2768_e76eb10688384296a289d1e9da31e975_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="186" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="PassengerId" selected="True" />
+            <Field field="Survived" selected="True" />
+            <Field field="Pclass" selected="True" />
+            <Field field="Name" selected="True" />
+            <Field field="Sex" selected="True" />
+            <Field field="Age" selected="True" />
+            <Field field="SibSp" selected="True" />
+            <Field field="Parch" selected="True" />
+            <Field field="Ticket" selected="True" />
+            <Field field="Fare" selected="True" />
+            <Field field="Cabin" selected="True" />
+            <Field field="Embarked" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PassengerId" source="File: C:\Users\LC\Downloads\train.csv" type="Int16" />
+            <Field name="Survived" source="File: C:\Users\LC\Downloads\train.csv" type="Byte" />
+            <Field name="Pclass" source="File: C:\Users\LC\Downloads\train.csv" type="Byte" />
+            <Field name="Name" size="82" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Sex" size="6" source="File: C:\Users\LC\Downloads\train.csv" type="String" />
+            <Field name="Age" source="File: C:\Users\LC\Downloads\train.csv" type="Double" />
+            <Field name="SibSp" source="File: C:\Users\LC\Downloads\train.csv" type="Byte" />
+            <Field name="Parch" source="File: C:\Users\LC\Downloads\train.csv" type="Byte" />
+            <Field name="Ticket" size="18" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Fare" source="File: C:\Users\LC\Downloads\train.csv" type="Double" />
+            <Field name="Cabin" size="15" source="File: C:\Users\LC\Downloads\train.csv" type="V_String" />
+            <Field name="Embarked" size="1" source="File: C:\Users\LC\Downloads\train.csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Survived" selected="True" type="V_String" size="3" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="366" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Survived]=&quot;0&quot; THEN &quot;Died&quot; &#xA;ELSE &quot;Survived&quot; ENDIF" field="Output" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF [Age] &gt; 15 THEN &quot;Adult&quot; &#xA;ELSE &quot;Child&quot; ENDIF" field="AgeGroup" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF IsNull([Cabin]) THEN &quot;X&quot; ELSE Left([Cabin],1) ENDIF" field="Cabin" size="15" type="V_String" />
+            <FormulaField expression="IF Round([Fare],1)&gt;31 THEN &quot;High&quot; ELSE &quot;Low&quot; ENDIF" field="FareCategory" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output = IF [Survived]="0" THEN "Died" 
+ELSE "Survived" ENDIF
+AgeGroup = IF [Age...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings>
+        <Position x="474" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">60</Value>
+          <Value name="validation pct">20</Value>
+          <Value name="rand seed">1</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="882" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\LC\AppData\Local\Temp\Engine_2676_d94e877f167b490098f37ead72a5f424_\Engine_2768_af2ad81eb81c46e991799cc061e31293_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings>
+        <Position x="594" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">Rfm_Titanic</Value>
+          <Value name="Y Var">Output</Value>
+          <Value name="X Vars">Pclass + Sex + SibSp + Parch + Embarked + AgeGroup + FareCategory</Value>
+          <Value name="Num Trees">500</Value>
+          <Value name="Custom Num Vars">False</Value>
+          <Value name="Num Vars">3</Value>
+          <Value name="model.size">False</Value>
+          <Value name="total.nodes">100</Value>
+          <Value name="max.depth">10</Value>
+          <Value name="node.size">5</Value>
+          <Value name="replace">True</Value>
+          <Value name="samp.rate">100</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\LC\AppData\Local\Temp\Engine_2676_d94e877f167b490098f37ead72a5f424_\Engine_2768_8846bd9c490143bd9f6fb3ef5b27a179_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="Score">
+        <Position x="774" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">
+          </Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\LC\Downloads\test.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>test.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PassengerId" size="254" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Pclass" size="254" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Name" size="254" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Sex" size="254" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Age" size="254" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="SibSp" size="254" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Parch" size="254" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Ticket" size="254" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Fare" size="254" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Cabin" size="254" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Embarked" size="254" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="210" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="PassengerId" selected="True" />
+            <Field field="Pclass" selected="True" />
+            <Field field="Name" selected="True" />
+            <Field field="Sex" selected="True" />
+            <Field field="Age" selected="True" />
+            <Field field="SibSp" selected="True" />
+            <Field field="Parch" selected="True" />
+            <Field field="Ticket" selected="True" />
+            <Field field="Fare" selected="True" />
+            <Field field="Cabin" selected="True" />
+            <Field field="Embarked" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PassengerId" source="File: C:\Users\LC\Downloads\test.csv" type="Int16" />
+            <Field name="Pclass" source="File: C:\Users\LC\Downloads\test.csv" type="Byte" />
+            <Field name="Name" size="63" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Sex" size="6" source="File: C:\Users\LC\Downloads\test.csv" type="String" />
+            <Field name="Age" source="File: C:\Users\LC\Downloads\test.csv" type="Double" />
+            <Field name="SibSp" source="File: C:\Users\LC\Downloads\test.csv" type="Byte" />
+            <Field name="Parch" source="File: C:\Users\LC\Downloads\test.csv" type="Byte" />
+            <Field name="Ticket" size="18" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Fare" source="File: C:\Users\LC\Downloads\test.csv" type="Double" />
+            <Field name="Cabin" size="15" source="File: C:\Users\LC\Downloads\test.csv" type="V_String" />
+            <Field name="Embarked" size="1" source="File: C:\Users\LC\Downloads\test.csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="378" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Age] &gt; 15 THEN &quot;Adult&quot; &#xA;ELSE &quot;Child&quot; ENDIF" field="AgeGroup" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF IsNull([Cabin]) THEN &quot;X&quot; ELSE Left([Cabin],1) ENDIF" field="Cabin" size="254" type="V_String" />
+            <FormulaField expression="IF Round([Fare],1)&gt;31 THEN &quot;High&quot; ELSE &quot;Low&quot; ENDIF" field="FareCategory" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>AgeGroup = IF [Age] &gt; 15 THEN "Adult" 
+ELSE "Child" ENDIF
+Cabin = IF IsNull([Cab...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Estimation" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Reports" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="28" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="28" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Predictive Analytics</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
