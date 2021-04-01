@@ -29,7 +29,7 @@ The 'Survived' type is changed to string as byte data type can't be used in pred
 ![image](https://user-images.githubusercontent.com/80466173/113254375-1ce68400-92e4-11eb-9e03-08b36eb4d2ca.png)
 
 
-### Model comparison Report
+#### Model comparison Report
 ![image](https://user-images.githubusercontent.com/80466173/113254492-44d5e780-92e4-11eb-8a3d-684822077028.png)
 
 ![image](https://user-images.githubusercontent.com/80466173/113254538-58814e00-92e4-11eb-8558-8e345a90bd35.png)
@@ -37,6 +37,13 @@ The 'Survived' type is changed to string as byte data type can't be used in pred
 ![image](https://user-images.githubusercontent.com/80466173/113254578-6636d380-92e4-11eb-8987-d0bedb7cb75e.png)
 
 ![image](https://user-images.githubusercontent.com/80466173/113254620-777fe000-92e4-11eb-8eb9-861d8073320d.png)
+
+
+#### Using Random Forest Classifier on Test data
+
+![image](https://user-images.githubusercontent.com/80466173/113255999-2ffa5380-92e6-11eb-8041-ae1536dff5c0.png)
+
+![image](https://user-images.githubusercontent.com/80466173/113256089-4dc7b880-92e6-11eb-9004-6c5335b99c25.png)
 
 
 
